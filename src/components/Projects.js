@@ -45,9 +45,6 @@ const Projects = () => {
                     <a href={project.liveLink} className="project-link" target="_blank" rel="noopener noreferrer">
                       <i className="fas fa-external-link-alt"></i>
                     </a>
-                    <a href={project.githubLink} className="project-link" target="_blank" rel="noopener noreferrer">
-                      <i className="fab fa-github"></i>
-                    </a>
                   </div>
                 </div>
                 <div className="image-placeholder">
