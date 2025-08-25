@@ -40,7 +40,7 @@ const Skills = () => {
   return (
     <section id="skills" className="skills" ref={skillsRef}>
       <div className="container">
-        <h2 className="section-title">Skills & Expertise</h2>
+
                     <div className="skills-grid">
               <div className="skill-category">
                 <h3>Frontend Development</h3>

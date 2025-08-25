@@ -1,6 +1,9 @@
 /* Skills Section */
 .skills {
-  background: var(--black);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../greenlake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--white);
 }
 
@@ -14,7 +17,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  color: var(--text-color);
+  color: rgba(255, 255, 255, 0.6) !important;
   text-align: center;
 }
 
@@ -32,12 +35,12 @@
 
 .skill-name {
   font-weight: 500;
-  color: var(--text-color);
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .skill-bar {
   height: 8px;
-  background: #e5e7eb;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   overflow: hidden;
 }

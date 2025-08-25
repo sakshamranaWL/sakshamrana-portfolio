@@ -1,7 +1,22 @@
 /* About Section */
 .about {
-  background: var(--black);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../greenlake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--white);
+}
+
+.about .section-title {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+#about .section-title {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+section#about .section-title {
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .about-content {
@@ -13,15 +28,15 @@
 
 .about-intro {
   font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-  color: var(--white);
+  margin-bottom: 3rem;
+  color: rgba(255, 255, 255, 0.6) !important;
   line-height: 1.7;
 }
 
 .about-details {
   font-size: 1rem;
   margin-bottom: 2rem;
-  color: #e5e7eb;
+  color: rgba(255, 255, 255, 0.6) !important;
   line-height: 1.6;
 }
 
@@ -34,11 +49,12 @@
 .stat {
   text-align: center;
   padding: 1.5rem;
-  background: #1a1a1a;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   border-radius: 12px;
   box-shadow: var(--shadow);
   transition: var(--transition);
-  border: 1px solid #333;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .stat:hover {
@@ -48,13 +64,14 @@
 .stat h3 {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 0.5rem;
 }
 
 .stat p {
   color: #d1d5db;
   font-weight: 500;
+  opacity: 0.8;
 }
 
 .about-image {
@@ -63,12 +80,114 @@
   align-items: center;
 }
 
+.profile-picture {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(35, 66, 52, 0.3);
+  transition: var(--transition);
+}
+
+.profile-picture img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 30px 60px rgba(35, 66, 52, 0.5);
+}
+
+.location-tag {
+  position: relative;
+  margin-top: 13rem;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 0.5rem;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 450;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.about-social-links {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.about-social-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 60px;
+}
+
+.about-social-link:hover {
+  transform: translateY(-2px);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-social-link i {
+  font-size: 1.2rem;
+}
+
+.about-social-label {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.about-social-link.github:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-social-link.linkedin:hover {
+  background: rgba(0, 119, 181, 0.3);
+  border-color: rgba(0, 119, 181, 0.5);
+}
+
+.about-social-link.twitter:hover {
+  background: rgba(29, 161, 242, 0.3);
+  border-color: rgba(29, 161, 242, 0.5);
+}
+
+.about-social-link.instagram:hover {
+  background: rgba(220, 39, 67, 0.3);
+  border-color: rgba(220, 39, 67, 0.5);
+}
+
 .image-placeholder {
   width: 300px;
   height: 300px;
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   border-radius: 50%;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -106,6 +225,11 @@
     padding: 1rem;
   }
 
+  .profile-picture {
+    width: 250px;
+    height: 250px;
+  }
+  
   .image-placeholder {
     width: 250px;
     height: 250px;

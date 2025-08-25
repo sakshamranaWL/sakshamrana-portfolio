@@ -14,11 +14,11 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">
-            Hi, I'm <span className="highlight">Saksham Rana</span>
+            🏏⚙️ Code by day, cricket shots by evening!
           </h1>
-          <p className="hero-subtitle">Software Developer & Cloud Solutions Specialist</p>
+          <p className="hero-subtitle">I'm <span className="highlight">Saksham Rana</span>, a developer who enjoys building cloud-powered, scalable apps as much as sinking a three-pointer or hitting a cover drive.</p>
           <p className="hero-description">
-            I build secure, scalable applications that leverage cutting-edge technologies like LLMs, cloud platforms, and modern web frameworks. Let's create something amazing together!
+            For me, both sports and software are about focus, teamwork, and constant improvement.
           </p>
           <div className="hero-buttons">
             <button 
@@ -35,13 +35,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="hero-visual">
-          <div className="floating-elements">
-            <div className="element element-1"></div>
-            <div className="element element-2"></div>
-            <div className="element element-3"></div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

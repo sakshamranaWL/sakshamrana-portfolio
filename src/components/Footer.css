@@ -1,6 +1,9 @@
 /* Footer */
 .footer {
-  background: var(--text-color);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../greenlake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--black);
   text-align: center;
   padding: 2rem 0;
@@ -21,9 +24,9 @@
 
 .back-to-top {
   padding: 0.75rem 1.5rem;
-  background: var(--white);
+  background: transparent;
   color: var(--black);
-  border: 2px solid var(--white);
+  border: 2px solid var(--black);
   border-radius: 25px;
   font-size: 0.9rem;
   font-weight: 600;
@@ -35,10 +38,11 @@
 }
 
 .back-to-top:hover {
-  background: transparent;
-  color: var(--black);
+  background: #3b82f6;
+  color: var(--white);
+  border-color: #3b82f6;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
 }
 
 .back-to-top i {

@@ -3,15 +3,14 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(10px);
+  background: transparent;
   z-index: 1000;
   transition: var(--transition);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.98);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -28,12 +27,14 @@
 .nav-logo h2 {
   color: var(--white);
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   transition: var(--transition);
+  font-family: 'Qwitcher Grypen', cursive;
+  letter-spacing: 1px;
 }
 
 .navbar.scrolled .nav-logo h2 {
-  color: var(--primary-color);
+  color: #000000 !important;
 }
 
 .nav-menu {
@@ -54,31 +55,17 @@
   font-family: inherit;
 }
 
-.nav-link:hover {
-  color: var(--secondary-color);
-}
-
 .navbar.scrolled .nav-link {
-  color: var(--text-color);
+  color: #000000 !important;
 }
 
-.navbar.scrolled .nav-link:hover {
-  color: var(--primary-color);
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--primary-color);
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
+.nav-link:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
 }
 
 .hamburger {
@@ -96,7 +83,7 @@
 }
 
 .navbar.scrolled .bar {
-  background: var(--text-color);
+  background: #000000 !important;
 }
 
 /* Mobile Navigation */
